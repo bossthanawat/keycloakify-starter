@@ -1,0 +1,60 @@
+/*
+This file is only meant to be used by Storybook
+*/
+
+@font-face {
+  font-family: "Prachason";
+  src: local("Prachason"),
+    url(../fonts/Prachason-Regular-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 900;
+  src: local("Prachason"),
+    url(../fonts/Prachason-Black-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 800;
+  src: local("Prachason"),
+    url(../fonts/Prachason-ExtraBold-WebOnly.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Prachason";
+  font-weight: 700;
+  src: local("Prachason"), url(./Prachason-Bold-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 600;
+  src: local("Prachason"),
+    url(./Prachason-SemiBold-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 500;
+  src: local("Prachason"), url(./Prachason-Medium-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 400;
+  src: local("Prachason"),
+    url(./Prachason-Regular-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 300;
+  src: local("Prachason"), url(./Prachason-Light-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 200;
+  src: local("Prachason"),
+    url(./Prachason-ExtraLight-WebOnly.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Prachason";
+  font-weight: 100;
+  src: local("Prachason"), url(./Prachason-Thin-WebOnly.woff2) format("woff2");
+}

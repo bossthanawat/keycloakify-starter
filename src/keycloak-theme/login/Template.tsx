@@ -8,7 +8,7 @@ import { type TemplateProps } from "keycloakify/login/TemplateProps";
 import { useGetClassName } from "keycloakify/login/lib/useGetClassName";
 import type { KcContext } from "./kcContext";
 import type { I18n } from "./i18n";
-import keycloakifyLogoPngUrl from "./assets/keycloakify-logo.png";
+// import keycloakifyLogoPngUrl from "./assets/keycloakify-logo.png";
 
 export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
@@ -45,7 +45,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
         "bodyClassName": getClassName("kcBodyClass")
     });
 
-    useState(()=> { document.title = i18n.msgStr("loginTitle", kcContext.realm.displayName); });
+    useState(() => { document.title = i18n.msgStr("loginTitle", kcContext.realm.displayName); });
 
     useEffect(() => {
         console.log(`Value of MY_ENV_VARIABLE on the Keycloak server: "${kcContext.properties.MY_ENV_VARIABLE}"`);
@@ -58,19 +58,17 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
     return (
         <div className={getClassName("kcLoginClass")}>
             <div id="kc-header" className={getClassName("kcHeaderClass")}>
-                <div 
-                    id="kc-header-wrapper" 
-                    className={getClassName("kcHeaderWrapperClass")}
-                    style={{ "fontFamily": '"Work Sans"' }}
+                <div
+                    id="kc-header-wrapper"
                 >
                     {/* 
                         Here we are referencing the `keycloakify-logo.png` in the `public` directory.  
                         When possible don't use this approach, instead ...
                     */}
-                    <img src={`${import.meta.env.BASE_URL}keycloakify-logo.png`} alt="Keycloakify logo" width={50} />
-                    {msg("loginTitleHtml", realm.displayNameHtml)}!!!
+                    {/* <img src={`${import.meta.env.BASE_URL}keycloakify-logo.png`} alt="Keycloakify logo" width={50} /> */}
+                    {/* {msg("loginTitleHtml", realm.displayNameHtml)}!!! */}
                     {/* ...rely on the bundler to import your assets, it's more efficient */}
-                    <img src={keycloakifyLogoPngUrl} alt="Keycloakify logo" width={50} />
+                    {/* <img src={keycloakifyLogoPngUrl} alt="Keycloakify logo" width={50} /> */}
                 </div>
             </div>
 

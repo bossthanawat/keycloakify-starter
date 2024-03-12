@@ -1,10 +1,17 @@
+body {
+  margin: 0;
+  font-family: Prachason, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #242424;
+}
 
 .my-color {
 	color: red;
 }
 
 .my-font {
-	font-family: 'Work Sans';
+	font-family: 'Prachason';
 }
 
 .my-root-class {
