@@ -21,3 +21,15 @@ body {
 .my-root-class body {
 	background: url(./assets/background.svg) no-repeat center center fixed;
 }
+
+.kcButtonPrimaryClass{
+  background-color: rgb(31, 123, 68);
+  background-image: none;
+  border-color: initial;
+}
+
+.kcButtonPrimaryClass:hover{
+  background-color: rgb(31, 123, 68);
+  background-image: none;
+  border-color: initial;
+}
